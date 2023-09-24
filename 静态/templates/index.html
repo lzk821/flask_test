@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %} 静态演示{% endblock %}
+    {% block style %}<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+                    <script src="{{ url_for('static',filename="js/ck.js") }}"></script>
+    {% endblock %}
+
+</head>
+<body>
+{% block tp %}<img src="{{ url_for('static', filename='image/tp.jpg') }}">{% endblock %}
+</body>
+</html>
