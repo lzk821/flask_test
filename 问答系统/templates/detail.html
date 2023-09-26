@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}钢铁侠是怎样炼成的{% endblock %}
+{% block body %}
+    <div class="row" style="margin-top: 20px;">
+            <div class="col"></div>
+            <div class="col-10" style="background-color: #fff;padding: 20px;">
+                <h3 class="page-title">钢铁侠是怎样炼成的</h3>
+                <p class="question-info">
+                    <span>作者：托尼史塔克</span>
+                    <span>时间：2022年10月30日</span>
+                </p>
+                <hr>
+                <p class="question-content">托尼史塔克的钢铁侠是这样炼成的！</p>
+                <hr>
+                <h4 class="comment-group-title">评论（2）：</h4>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="text" placeholder="请填写评论" name="content" class="form-control">
+                    </div>
+                    <div class="form-group" style="text-align: right;">
+                        <button class="btn btn-primary">评论</button>
+                    </div>
+                </form>
+                <ul class="comment-group">
+                    <li>
+                        <div class="user-info">
+                            <img class="avatar" src="./static/images/avatar.jpg" alt="">
+                            <span class="username">法外狂徒张三</span>
+                            <span class="create-time">2022年10月30日</span>
+                        </div>
+                        <p class="comment-content">讲得真好！</p>
+                    </li>
+
+                    <li>
+                        <div class="user-info">
+                            <img class="avatar" src="./static/images/avatar.jpg" alt="">
+                            <span class="username">我方律师张伟</span>
+                            <span class="create-time">2022年10月30日</span>
+                        </div>
+                        <p class="comment-content">我张伟表示不服！</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col"></div>
+        </div>
+{% endblock %}

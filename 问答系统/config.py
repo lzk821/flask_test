@@ -1,0 +1,23 @@
+SECRET_KEY = "LZKAHMYSYS45e45sfd4sdf"
+#配置数据库
+HOSTNAME = '127.0.0.1'
+PORT = 1116
+USERNAME = 'root'
+PASSWORD = 'password'
+DATEBASE = 'liashqa'
+
+DB_URI = f'mysql+pymysql://{USERNAME}:{PASSWORD}@{HOSTNAME}:{PORT}/{DATEBASE}?charset=utf8mb4'
+SQLALCHEMY_DATABASE_URI = DB_URI
+
+# 邮箱配置
+MAIL_SERVER = "smtp.qq.com"
+MAIL_USE_SSL = "True"
+MAIL_PORT = 465
+MAIL_USERNAME = "2236612585@qq.com"
+MAIL_PASSWORD = "gvimghjofmeueagc"
+MAIL_DEFAULT_SENDER = "2236612585@qq.com"
+
+#缓存配置，这里我采用的是Redis缓存
+CACHE_TYPE = "RedisCache"
+CACHE_REDIS_HOST = "127.0.0.1"
+CACHE_REDIS_PORT = 6379
